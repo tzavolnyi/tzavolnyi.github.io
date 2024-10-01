@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania's Musings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script> <!-- Corrected attribute from scr to src -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section with Navigation Links -->
+    <header>
+        <div id="falling-shapes"></div>
+        <h1>Welcome to Tania's Musings!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" aria-label="Go to Home">Home</a></li>
+                <li><a href="https://open.spotify.com/playlist/6zLl34Hj6z5DMS69gYZ3Rm?si=18ff96f00c214af6" target="_blank" aria-label="Listen to Spotify">Spotify</a></li>
+                <li><a href="https://www.linkedin.com/in/tania-zavolnyi-703382243/" target="_blank" aria-label="Connect with me on LinkedIn">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/tania_zavolnyi/" target="_blank" aria-label="Follow me on Instagram">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="container">
+            <!-- Main Blog Content -->
+            <section id="about-me" tabindex="0">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Tania! I created this blog to become my little corner of the internet where I share my thoughts, connect with people, and explore the unknown.
+                </p>
+                <p>
+                    I recently graduated from the University of Sheffield with a degree in law. Although I loved law, I didn't perform as best as I could, which has led me to explore new creative paths. This coding camp has opened my eyes to the world of technology and creativity.
+                </p>
+                <p>
+                    If you're interested in connecting, feel free to add me on LinkedIn or follow me on Instagram. I'm always up for a chat!
+                </p>
+                <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <img src="Screenshot 2024-09-30 220052.png" alt="Profile Picture of Tania" width="150" height="150" role="img">
+                </div>
+            </section>            
+
+            <!-- Newsletter Subscription Form -->
+            <section id="newsletter" tabindex="0" aria-labelledby="newsletter-heading">
+                <h2 id="newsletter-heading">Join My Newsletter</h2>
+                <p>
+                    Stay updated with my latest blog posts, exclusive content, and music recommendations. 
+                    Enter your email below to subscribe to my monthly newsletter!
+                </p>
+                <form action="submit-newsletter" method="post" aria-labelledby="newsletter-heading">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" placeholder="Your Surname" required aria-required="true">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Tania's Musings</h2>
+        <p>&copy; 2024 Tania's Musings. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
